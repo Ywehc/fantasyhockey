@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Boxscore</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <style>
+            body {
+                background-color: black;
+            }
+            .boxscore {
+                background: white;
+                width: 500px;
+                height: 500px;
+                margin: 2em auto;
+                border: 2px solid silver;
+            }
+            .away-team, .home-team {
+                height: 50%;
+                width: 100%;
+            }
+            .away-team {
+                border-bottom: 2px solid silver;
+                display: flex;
+            }
+            .away-team-logo, .away-team-score, .home-team-logo, .home-team-score {
+                height: 100%;
+                width: 50%;
+            }
+            .away-team-logo, .home-team-logo {
+                border-right: 2px solid silver;
+            }
+            .away-team-score {
+                background: #cc0a34;
+                color: white;
+            }
+            .home-team-score {
+                background: #002663;
+                color: white;
+            }
+
+            .home-team {
+                display: flex;
+            }
+            .away-team-logo, .home-team-logo, .away-team-score, .home-team-score {
+                display: flex;
+                justify-content: center; /* align horizontal */
+                align-items: center; /* align vertical */
+            }
+            .team-logo {
+                width: 13em;
+            }
+            .score {
+                font-size: 500%;
+                font-family: 'Righteous', cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="boxscore">
+            <div class="away-team">
+                <div class="away-team-logo">
+                    <img class="team-logo" src="images/redwings.gif">
+
+                </div>
+                <div class="away-team-score">
+                    <p class="score">4</p>
+                </div>
+            </div>
+            <div class="home-team">
+                <div class="home-team-logo">
+                    <img class="team-logo" src="images/leafs.png">
+                </div>
+                <div class="home-team-score">
+                    <p class="score">3</p>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
